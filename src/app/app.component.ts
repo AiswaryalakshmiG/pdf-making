@@ -124,7 +124,7 @@ export class AppComponent {
   {
     columns: [      
         {text:'Applicant and Beneficiary Details', fontSize:16, bold:true, marginTop: 20, width: 250, color: '#3d3d3d'},
-        {text:'____________________________________________________', color:'#616161', marginTop: 19,marginLeft: 20},
+        {text:'_________________________________________________', color:'#616161', marginTop: 19,marginLeft: 20},
   ]
 },
 { text: 'Applicant', fontSize: 14, bold: true, color: 'black', marginTop: 5},
@@ -150,7 +150,7 @@ export class AppComponent {
 },
 
 { text: ' ', fontSize: 14, bold: true, color: 'black', marginTop: 50},
-{ text: 'Beneficiary', fontSize: 14, bold: true, color: 'black', marginTop: 50},
+{ text: 'Beneficiary', fontSize: 14, bold: true, color: 'black', marginTop: 80},
 
 {
   columns:[
@@ -172,7 +172,6 @@ export class AppComponent {
     },
   ]
 },
-
 {
   columns: [      
       {text:'Bank Details', fontSize:16, bold:true, marginTop: 20, width: 150, color: '#3d3d3d'},
@@ -258,6 +257,84 @@ columns:[
       },
     ]
     },
+
+
+    {
+      columns: [      
+          {text:'Payment Details', fontSize:16, bold:true, marginTop: 20, width: 250, color: '#3d3d3d'},
+          {text:'____________________________________________________', color:'#616161', marginTop: 19, marginRight: 70},
+    ]
+    },
+    {
+      columns:[
+        
+        {
+          stack: [
+            { text: 'Bank', style:'transaction',},
+            { text: 'paymentDetailsBankEntity_Other', style:'information'  },
+            { text: 'Credit Available By', style:'transaction',},
+            { text: 'Negotiation', style:'information'  },
+            { text: 'Payment/Draft At', style:'transaction',},
+            { text: 'Calculated Maturity Date', style:'information'  },
+            { text: 'Drawee Details', style:'transaction',},
+            { text: 'Issuing Bank', style:'information'  },
+          
+            
+          ], 
+        },
+      
+        {
+          stack: [
+            { text: 'Name', style:'transaction',},
+            { text: 'KOTAK MAHINDRA BANK LIMITED', style:'information'},
+            { text: 'Maturity Date', style:'transaction',},
+            { text: '180 Tenor (Days) After Airway Bill', style:'information'},
+          ], 
+        },
+      ]
+      },
+
+      {text: ' '},
+      {
+        columns: [  
+            
+            {text:'Shipment Details', fontSize:16, bold:true, marginTop: 50, width: 250, color: '#3d3d3d'},
+            {text:'____________________________________________________', color:'#616161', marginTop: 49, marginRight: 70},
+      ]
+      },
+      {
+        columns:[
+          
+          {
+            stack: [
+              { text: 'Shipment To', style:'transaction',},
+              { text: 'CHENNAI AIRPORT', style:'information'  },
+              { text: 'Place of Discharge', style:'transaction',},
+              { text: 'ANY PORT IN INDIA', style:'information'  },
+              { text: 'Partial Shipment', style:'transaction',},
+              { text: 'Allowed', style:'information'  },
+              { text: 'Incoterms Rules', style:'transaction',},
+              { text: 'OTHER', style:'information'  },
+            
+              
+            ], 
+          },
+        
+          {
+            stack: [
+              { text: 'Place of Loading', style:'transaction',},
+              { text: 'ANY AIRPORT IN SINGAPORE', style:'information'},
+              { text: 'Last Shipment Date', style:'transaction',},
+              { text: '21/11/2023', style:'information'},
+              { text: 'Transhipment', style:'transaction',},
+              { text: 'Allowed', style:'information'},
+              { text: 'Purchase Terms', style:'transaction',},
+              { text: 'CIP - Carriage and Insurance Paid', style:'information'},
+            ], 
+          },
+        ]
+        },
+  
 
       ],
 
